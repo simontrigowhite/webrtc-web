@@ -1,41 +1,79 @@
-main.js:284 7.448 Requesting local stream.
-main.js:284 9.246 Received local stream.
-main.js:284 10.955 localVideo videoWidth: 640px, videoHeight: 480px.
-main.js:284 15.198 Starting call.
-main.js:284 15.198 Using video device: FaceTime HD Camera (Built-in) (05ac:8600).
-main.js:284 15.201 Created local peer connection object localPeerConnection.
-main.js:284 15.203 Created remote peer connection object remotePeerConnection.
-main.js:284 15.205 Added local stream to localPeerConnection.
-main.js:284 15.205 localPeerConnection createOffer start.
-main.js:284 15.208 Offer from localPeerConnection:
+main.js:286 1.690 Requesting local stream.
+main.js:286 3.124 Received local stream.
+main.js:286 4.805 localVideo videoWidth: 640px, videoHeight: 480px.
+main.js:286 6.390 Starting call.
+main.js:286 6.390 Using video device: FaceTime HD Camera (Built-in) (05ac:8600).
+main.js:286 6.391 Using audio device: Default - Internal Microphone (Built-in).
+main.js:286 6.392 Created local peer connection object localPeerConnection.
+main.js:286 6.393 Created remote peer connection object remotePeerConnection.
+main.js:286 6.394 Added local stream to localPeerConnection.
+main.js:286 6.394 localPeerConnection createOffer start.
+main.js:286 6.397 Offer from localPeerConnection:
 v=0
-o=- 3591789109646534430 2 IN IP4 127.0.0.1
+o=- 1902573044094935687 2 IN IP4 127.0.0.1
 s=-
 t=0 0
-a=group:BUNDLE 0
-a=msid-semantic: WMS ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP
+a=group:BUNDLE 0 1
+a=msid-semantic: WMS NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Y7YB
+a=ice-pwd:wA58PbmnetTeI/6XPTCRiqIW
+a=ice-options:trickle
+a=fingerprint:sha-256 11:20:5A:5B:3F:2A:5D:B0:9C:7D:E8:22:13:65:62:9C:AD:A8:05:01:73:43:59:23:33:8D:FC:09:B9:60:FD:4A
+a=setup:actpass
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=sendrecv
+a=msid:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ 79a26b86-e523-45a8-8e4c-043fe4355a73
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:2858424853 cname:rLz3646CEmDZRebA
+a=ssrc:2858424853 msid:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ 79a26b86-e523-45a8-8e4c-043fe4355a73
+a=ssrc:2858424853 mslabel:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ
+a=ssrc:2858424853 label:79a26b86-e523-45a8-8e4c-043fe4355a73
 m=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 120 127 119 125 107 108 109 124 118 123
 c=IN IP4 0.0.0.0
 a=rtcp:9 IN IP4 0.0.0.0
-a=ice-ufrag:FxVi
-a=ice-pwd:FwFpIJdvieAgS5H/EAMA/gwF
+a=ice-ufrag:Y7YB
+a=ice-pwd:wA58PbmnetTeI/6XPTCRiqIW
 a=ice-options:trickle
-a=fingerprint:sha-256 89:D4:B9:13:36:4D:97:B5:26:E3:D7:E4:F7:E1:4A:77:F0:04:41:B8:08:40:E0:8D:AE:4D:3E:8E:7B:D8:9F:97
+a=fingerprint:sha-256 11:20:5A:5B:3F:2A:5D:B0:9C:7D:E8:22:13:65:62:9C:AD:A8:05:01:73:43:59:23:33:8D:FC:09:B9:60:FD:4A
 a=setup:actpass
-a=mid:0
-a=extmap:1 urn:ietf:params:rtp-hdrext:toffset
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
 a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
-a=extmap:3 urn:3gpp:video-orientation
-a=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
-a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
-a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
 a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
 a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
-a=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid
-a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
-a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
 a=sendrecv
-a=msid:ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP 376b21b5-9cfe-462a-b91a-2f193cfba437
+a=msid:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ 39f089ad-e297-4d52-9be8-4e294d1d5a6c
 a=rtcp-mux
 a=rtcp-rsize
 a=rtpmap:96 VP8/90000
@@ -104,48 +142,80 @@ a=rtpmap:124 red/90000
 a=rtpmap:118 rtx/90000
 a=fmtp:118 apt=124
 a=rtpmap:123 ulpfec/90000
-a=ssrc-group:FID 3508663559 3927669952
-a=ssrc:3508663559 cname:R32SjkQbrmhdC3Nd
-a=ssrc:3508663559 msid:ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP 376b21b5-9cfe-462a-b91a-2f193cfba437
-a=ssrc:3508663559 mslabel:ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP
-a=ssrc:3508663559 label:376b21b5-9cfe-462a-b91a-2f193cfba437
-a=ssrc:3927669952 cname:R32SjkQbrmhdC3Nd
-a=ssrc:3927669952 msid:ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP 376b21b5-9cfe-462a-b91a-2f193cfba437
-a=ssrc:3927669952 mslabel:ONfxhR2Sr1dtPb7MZITLnM3sJA1Kk12JyHOP
-a=ssrc:3927669952 label:376b21b5-9cfe-462a-b91a-2f193cfba437
-main.js:284 15.208 localPeerConnection setLocalDescription start.
-main.js:284 15.210 remotePeerConnection setRemoteDescription start.
-main.js:284 15.213 remotePeerConnection createAnswer start.
-main.js:284 15.221 localPeerConnection setLocalDescription complete.
-main.js:284 15.221 Remote peer connection received remote stream.
-main.js:284 15.222 remotePeerConnection setRemoteDescription complete.
-main.js:284 15.223 Answer from remotePeerConnection:
+a=ssrc-group:FID 3304209373 3307508832
+a=ssrc:3304209373 cname:rLz3646CEmDZRebA
+a=ssrc:3304209373 msid:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ 39f089ad-e297-4d52-9be8-4e294d1d5a6c
+a=ssrc:3304209373 mslabel:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ
+a=ssrc:3304209373 label:39f089ad-e297-4d52-9be8-4e294d1d5a6c
+a=ssrc:3307508832 cname:rLz3646CEmDZRebA
+a=ssrc:3307508832 msid:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ 39f089ad-e297-4d52-9be8-4e294d1d5a6c
+a=ssrc:3307508832 mslabel:NRNlIUJbPgZcCYbvArIAEs2asPQDsGsEdhlJ
+a=ssrc:3307508832 label:39f089ad-e297-4d52-9be8-4e294d1d5a6c
+main.js:286 6.397 localPeerConnection setLocalDescription start.
+main.js:286 6.399 remotePeerConnection setRemoteDescription start.
+main.js:286 6.402 remotePeerConnection createAnswer start.
+main.js:286 6.409 localPeerConnection setLocalDescription complete.
+main.js:286 6.410 Remote peer connection received remote stream.
+main.js:286 6.410 remotePeerConnection setRemoteDescription complete.
+main.js:286 6.411 Answer from remotePeerConnection:
 v=0
-o=- 8086973807255730166 2 IN IP4 127.0.0.1
+o=- 4180871708225085191 2 IN IP4 127.0.0.1
 s=-
 t=0 0
-a=group:BUNDLE 0
+a=group:BUNDLE 0 1
 a=msid-semantic: WMS
+m=audio 9 UDP/TLS/RTP/SAVPF 111 103 104 9 0 8 106 105 13 110 112 113 126
+c=IN IP4 0.0.0.0
+a=rtcp:9 IN IP4 0.0.0.0
+a=ice-ufrag:Qi6i
+a=ice-pwd:Uekh/qz1WkxSb53DPl6IqvJQ
+a=ice-options:trickle
+a=fingerprint:sha-256 6F:E7:A1:C9:D1:E1:A0:83:AA:F6:87:98:6A:AB:C6:97:E0:7E:F5:C6:66:D0:3F:31:FE:81:C6:A5:2F:A9:09:6B
+a=setup:active
+a=mid:0
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=recvonly
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
 m=video 9 UDP/TLS/RTP/SAVPF 96 97 98 99 100 101 102 120 127 119 125 107 108 109 124 118 123
 c=IN IP4 0.0.0.0
 a=rtcp:9 IN IP4 0.0.0.0
-a=ice-ufrag:WvQ1
-a=ice-pwd:47mCBFAb6DY6TN4Sy5FO9Qyk
+a=ice-ufrag:Qi6i
+a=ice-pwd:Uekh/qz1WkxSb53DPl6IqvJQ
 a=ice-options:trickle
-a=fingerprint:sha-256 79:AF:33:69:85:C6:5E:E6:BE:C9:5C:F5:BA:0A:3D:C6:17:35:31:83:84:52:29:11:E1:FD:9C:96:52:FF:6B:3C
+a=fingerprint:sha-256 6F:E7:A1:C9:D1:E1:A0:83:AA:F6:87:98:6A:AB:C6:97:E0:7E:F5:C6:66:D0:3F:31:FE:81:C6:A5:2F:A9:09:6B
 a=setup:active
-a=mid:0
-a=extmap:1 urn:ietf:params:rtp-hdrext:toffset
+a=mid:1
+a=extmap:14 urn:ietf:params:rtp-hdrext:toffset
 a=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time
-a=extmap:3 urn:3gpp:video-orientation
-a=extmap:4 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
-a=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
-a=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
+a=extmap:13 urn:3gpp:video-orientation
+a=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01
+a=extmap:12 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay
+a=extmap:11 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type
 a=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing
 a=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space
-a=extmap:9 urn:ietf:params:rtp-hdrext:sdes:mid
-a=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
-a=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
+a=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid
+a=extmap:5 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id
+a=extmap:6 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id
 a=recvonly
 a=rtcp-mux
 a=rtcp-rsize
@@ -216,28 +286,28 @@ a=rtpmap:118 rtx/90000
 a=fmtp:118 apt=124
 a=rtpmap:123 ulpfec/90000
 .
-main.js:284 15.223 remotePeerConnection setLocalDescription start.
-main.js:284 15.224 localPeerConnection setRemoteDescription start.
-main.js:284 15.234 remotePeerConnection setLocalDescription complete.
-main.js:284 15.235 localPeerConnection setRemoteDescription complete.
-main.js:284 15.243 localPeerConnection ICE candidate:
-candidate:1674437664 1 udp 2113937151 790f0680-23f1-49e9-aecf-423febe97985.local 53597 typ host generation 0 ufrag FxVi network-cost 999.
-main.js:284 15.246 localPeerConnection ICE candidate:
-candidate:2811589322 1 udp 2113939711 0dd0e01a-02f2-49b8-a2a3-2db8f1edad53.local 59860 typ host generation 0 ufrag FxVi network-cost 999.
-main.js:284 15.247 remotePeerConnection ICE candidate:
-candidate:1674437664 1 udp 2113937151 790f0680-23f1-49e9-aecf-423febe97985.local 52044 typ host generation 0 ufrag WvQ1 network-cost 999.
-main.js:284 15.249 remotePeerConnection ICE candidate:
-candidate:2811589322 1 udp 2113939711 0dd0e01a-02f2-49b8-a2a3-2db8f1edad53.local 55809 typ host generation 0 ufrag WvQ1 network-cost 999.
-2main.js:284 15.250 localPeerConnection addIceCandidate success.
-main.js:284 15.250 remotePeerConnection addIceCandidate success.
-main.js:284 15.251 remotePeerConnection addIceCandidate success.
-main.js:117 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
-main.js:284 15.252 remotePeerConnection ICE state: checking.
-main.js:117 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
-main.js:284 15.253 localPeerConnection ICE state: checking.
-main.js:117 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
-main.js:284 15.254 remotePeerConnection ICE state: connected.
-main.js:117 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
-main.js:284 15.255 localPeerConnection ICE state: connected.
-main.js:284 15.336 remoteVideo videoWidth: 640px, videoHeight: 480px.
-main.js:284 19.042 Ending call.
+main.js:286 6.411 remotePeerConnection setLocalDescription start.
+main.js:286 6.413 localPeerConnection setRemoteDescription start.
+main.js:286 6.424 remotePeerConnection setLocalDescription complete.
+main.js:286 6.425 localPeerConnection setRemoteDescription complete.
+main.js:286 6.433 localPeerConnection ICE candidate:
+candidate:1674437664 1 udp 2113937151 790f0680-23f1-49e9-aecf-423febe97985.local 49304 typ host generation 0 ufrag Y7YB network-cost 999.
+main.js:286 6.435 localPeerConnection ICE candidate:
+candidate:2811589322 1 udp 2113939711 0dd0e01a-02f2-49b8-a2a3-2db8f1edad53.local 61538 typ host generation 0 ufrag Y7YB network-cost 999.
+main.js:286 6.437 remotePeerConnection ICE candidate:
+candidate:1674437664 1 udp 2113937151 790f0680-23f1-49e9-aecf-423febe97985.local 64644 typ host generation 0 ufrag Qi6i network-cost 999.
+main.js:286 6.439 remotePeerConnection ICE candidate:
+candidate:2811589322 1 udp 2113939711 0dd0e01a-02f2-49b8-a2a3-2db8f1edad53.local 49278 typ host generation 0 ufrag Qi6i network-cost 999.
+2main.js:286 6.440 localPeerConnection addIceCandidate success.
+main.js:286 6.440 remotePeerConnection addIceCandidate success.
+main.js:286 6.441 remotePeerConnection addIceCandidate success.
+main.js:119 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
+main.js:286 6.441 remotePeerConnection ICE state: checking.
+main.js:119 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
+main.js:286 6.442 localPeerConnection ICE state: checking.
+main.js:119 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
+main.js:286 6.443 remotePeerConnection ICE state: connected.
+main.js:119 ICE state change event:  Event {isTrusted: true, type: "iceconnectionstatechange", target: RTCPeerConnection, currentTarget: RTCPeerConnection, eventPhase: 2, …}
+main.js:286 6.444 localPeerConnection ICE state: connected.
+main.js:286 6.521 remoteVideo videoWidth: 640px, videoHeight: 480px.
+main.js:286 10.603 Ending call.
