@@ -1,4 +1,0 @@
-main.js:10 Message from client: Asking to join room foo
-main.js:31 Message from server: Received request to create or join room foo
-main.js:31 Message from server: Room foo now has 0 client(s)
-main.js:31 Message from server: Client ID NJaVu1oeiUml_--BAAAB created room foo
