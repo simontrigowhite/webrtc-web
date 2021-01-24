@@ -66,7 +66,31 @@ window.onload = () => {
       
     blobs = [];
   
-    rec = new MediaRecorder(stream, {mimeType: 'video/webm; codecs=vp8,opus'});
+
+    var bitDepth = 16;
+    var sampleRate = 44100;
+    var bitRate = sampleRate * bitDepth;
+
+    // rec.setAudioEncodingBitRate(bitRate);
+    // rec.setAudioSamplingRate(sampleRate);
+
+    var options = {
+      audioBitsPerSecond : bitRate,
+      mimeType : 'video/webm; codecs=vp8,opus'
+    }
+
+    rec = new MediaRecorder(stream, options);
+
+    // rec.setAudioSource(MediaRecorder.AudioSource.MIC);
+    // rec.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
+    // rec.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+    // rec.setAudioEncodingBitRate(16);
+    // rec.setAudioSamplingRate(44100);
+
+
+
+
+
     rec.ondataavailable = (e) => blobs.push(e.data);
     rec.onstop = async () => {
       
@@ -86,6 +110,7 @@ window.onload = () => {
   startBtn.onclick = () => {
     startBtn.disabled = true;
     stopBtn.disabled = false;
+
     rec.start();
   };
 
