@@ -1,0 +1,4 @@
+script.js:61 Tracks to add to stream Array(2)0: MediaStreamTrack {kind: "video", id: "2c2a37ea-ffde-4857-a3b0-0ecb84b06ead", label: "screen:2077750201:0", enabled: true, muted: false, …}1: MediaStreamTrack {kind: "audio", id: "2ce938b4-9b2c-4a9d-81ac-4759bc182c3f", label: "MediaStreamAudioDestinationNode", enabled: true, muted: false, …}length: 2__proto__: Array(0)
+script.js:63 Stream MediaStreamactive: falseid: "2d890e57-c639-47c5-9138-b0e23881c03b"onactive: nullonaddtrack: nulloninactive: nullonremovetrack: null__proto__: MediaStream
+script.js:82 Clamping calculated audio bitrate (705600bps) to the maximum (128000bps)
+captureBtn.onclick @ script.js:82
