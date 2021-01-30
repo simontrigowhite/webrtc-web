@@ -1,0 +1,92 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red25\green25\blue27;\red254\green246\blue217;\red0\green0\blue0;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c12941\c12941\c14118;\cssrgb\c99608\c96863\c87843;\cssrgb\c0\c0\c0\c72157;
+\cssrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid1\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww26880\viewh13620\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs28 \cf0 \
+Get the webrtc-web app running on a server, to stream video and audio between machines over the internet
+\f1\b0\fs24 \
+\
+\ul Run locally:\
+\ulnone \
+Start Web Server for Chrome, with folder as this folder.\
+\
+In this folder, run: \
+	npm install  \
+	node index.js\
+	\
+Visit http://localhost:8080/\
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+You'll need to restart your Node.js server each time you close a client tab or window.\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs24 \cf4 \cb5 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \ul \ulc0 Install on a server:\
+\pard\pardeftab720\partightenfactor0
+
+\f2 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\ulnone \
+Now trying peers on different machines, over internet.\
+\
+Google compute engine:\
+\
+\
+Follow https://cloud.google.com/compute/docs/quickstart-windows\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8259 	}\expnd0\expndtw0\kerning0
+#EN:mYvuouyr\\\}$\
+\pard\pardeftab720\partightenfactor0
+\cf4 \
+Then https://cloud.google.com/compute/docs/tutorials/basic-webserver-iis\
+\
+Then install node and rpm by following https://phoenixnap.com/kb/install-node-js-npm-on-windows\
+\
+Now can run the app locally in chrome, using localhost:8080\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 Then http://www.boadista.com works\
+
+\f2 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 But get getUserMedia() error: NotFound error\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \cb1 \kerning1\expnd0\expndtw0 \ul Make server https:\
+\
+\ulnone Used IIS on server to create a CSR request - saved public (csr) key and private key\
+\ul \
+\ulnone Got a certificate from sslmarket.co.uk.\
+\
+Get the pfx file from sslmarket website in my account, using the private key there\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 Install it in IIS \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \ul \
+https://www.sslmarket.co.uk/ssl/installation-of-tls-certificate-in-iis-10-a-iis-8/\
+\ulnone \
+Then https://www.boadista.com works\
+\
+But still get socket errors.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 {{\NeXTGraphic Pasted Graphic.png \width31940 \height20380 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\
+}
